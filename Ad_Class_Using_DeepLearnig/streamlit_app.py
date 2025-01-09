@@ -6,7 +6,7 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 # Load the tokenizer and model
-with open('tokenizer.pkl', 'rb') as tokenizer_file:
+with open('Ad_Class_Using_DeepLearnig/tokenizer.pkl', 'rb') as tokenizer_file:
     tokenizer = pickle.load(tokenizer_file)
 model = load_model('video_classification_model.h5')
 
