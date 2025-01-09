@@ -8,7 +8,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 # Load the tokenizer and model
 with open('Ad_Class_Using_DeepLearnig/tokenizer.pkl', 'rb') as tokenizer_file:
     tokenizer = pickle.load(tokenizer_file)
-model = load_model('video_classification_model.h5')
+model = load_model('Ad_Class_Using_DeepLearnig/video_classification_model.h5')
 
 # Preprocessing function
 def pre_process(text):
